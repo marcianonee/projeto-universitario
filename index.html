@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal da Universidade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Escola Comunitária Unificada N'dó Djeu-mê</h1>
+        <h2>Portfólio de Gestão Acadêmica</h2>
+    </header>
+
+    <div>
+        <fieldset>
+            <legend>Dados do Aluno</legend>
+            <p><strong>Nome Completo:</strong> Marciano Bifa Có</p>
+            <p><strong>Matrícula:</strong> 2024001</p>
+            <p><strong>Curso:</strong> Engenharia de Computação</p>
+            <p><strong>Status:</strong> Ativo</p>
+        </fieldset>
+
+        <form action="#" method="post">
+            <h3>Solicitar Nova Disciplina</h3>
+
+            <p>
+                <label for="idDisciplina"><strong>Selecione a Disciplina:</strong></label>
+                <select name="disciplina" id="idDisciplina" required>
+                    <option value="" disabled selected>Escolha uma matéria...</option>
+                    <option value="introducao-a-engenharia-de-computacao">Introdução a Engenharia de Computação</option>
+                    <option value="matematica">Matemática Discreta</option>
+                    <option value="algoritmos">Algoritmos</option>
+                    <option value="programacao-i">Programação I</option>
+                    <option value="programacao-ii">Programação II</option>
+                    <option value="estrutura-dados">Estruturas de Dados</option>
+                    <option value="banco-dados-i">Banco de Dados-I</option>
+                    <option value="banco-dados-ii">Banco de Dados-II</option>
+                    <option value="engenharia-de-software-i">Engenharia de Software I</option>
+                    <option value="engenharia-de-software-ii">Engenharia de Software II</option>
+                    <option value="redes-de-computadores">Redes de Computadores</option>
+                    <option value="sistemas-embarcados">Sistemas Embarcados</option>
+                    <option value="sistemas-operacionais">Sistemas Operacionais</option>
+                    <option value="computacao-em-nuvem">Computação em Nuvem</option>
+                    <option value="inteligencia-artificial">Inteligência Artificial</option>
+                    <option value="robotica">Robótica</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="idJustificativa"><strong>Justificativa da Solicitação:</strong></label><br>
+                <textarea name="justificativa" id="idJustificativa" cols="30" rows="5"
+                    placeholder="Explique por que deseja cursar esta disciplina..."></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox" name="termos" id="idTerms" required>
+                <label for="idTerms">Declaro que li e aceito os regulamentos da instituição.</label>
+            </p>
+
+            <input type="submit" value="Enviar Solicitação">
+        </form>
+
+        <hr> <h3>Grade de Horários Semanais</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Segunda-Feira</th>
+                    <th>Terça-Feira</th>
+                    <th>Quarta-Feira</th>
+                    <th>Quinta-Feira</th>
+                    <th>Sexta-Feira</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:00 - 10:00</td>
+                    <td>Algoritmos</td>
+                    <td>Matemática Discreta</td>
+                    <td>Programação I</td>
+                    <td>Introdução a Engenharia de Computação</td>
+                    <td>Computação em Nuvem</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 12:00</td>
+                    <td>Programação II</td>
+                    <td>Estruturas de Dados</td>
+                    <td>Banco de Dados I</td>
+                    <td>Sistemas Operacionais</td>
+                    <td>Sistemas Digitas Embarcados</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Total de Horas Semanais: 20 Horas</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
